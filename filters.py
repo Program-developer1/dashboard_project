@@ -3,7 +3,7 @@ import numpy as np
 
 
 def load_data():
-    df = pd.read_csv("data/2_5_month.csv")
+    df = pd.read_csv("2_5_month.csv")
 
     df["time"]    = pd.to_datetime(df["time"],    utc=True, errors="coerce")
     df["updated"] = pd.to_datetime(df["updated"], utc=True, errors="coerce")
